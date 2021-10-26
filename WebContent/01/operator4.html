@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/*
+		비교 연산자
+		a > b : a가 b보다 크다
+		a < b : a가 b보다 작다
+		a >= b : a가 b보다 크거나 같다
+		a <= b : a가 b보다 작거나 같다
+		a == b : a와 b는 같다(숫자의 경우 문자형과 구분하지 않는다)
+		a != b : a와 b는 같지 않다(숫자의 경우 문자형과 구분하지 않는다)
+		a === b : a와 b는 같다(숫자의 경우 문자형과 구분한다)
+		a !== b : a와 b는 같지 않다(숫자의 경우 문자형과 구분한다)
+	*/
+	
+	var a = 10;
+	var b = 20;
+	var c = 10;
+	var f = "20";
+	var result;
+
+	result = a > b; // false
+	document.write(result, "<br>");
+	result = a < b; // true
+	document.write(result, "<br>");
+	result = a <= b; // true
+	document.write(result, "<br>");
+	result = b == f; // true
+	document.write(result, "<br>");
+	result = a != b; // true
+	document.write(result, "<br>");
+	result = b === f; // false
+	document.write(result, "<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>
