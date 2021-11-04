@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>적정 체중 구하기</title>
+<script type="text/javascript">
+	function calc() {
+		var height = document.getElementById("height").value;
+		var weight = document.getElementById("weight").value;
+		var normal_w = (height - 100) * 0.9;
+		var result = normal_w - weight;
+		if (result > 0) {
+			document.write("적정 체중은 " + normal_w + "kg 이며, 현재 적정 제중보다 " + result + "kg이 더 적습니다.")		
+		} else {
+			document.write("적정 체중은 " + normal_w + "kg 이며, 현재 적정 제중보다 " + -result + "kg이 더 많습니다.")
+		}		
+	}
+</script>
+</head>
+<body>
+	<label for="height">신장</label>
+	<input id="height" type="text">
+	<label for="weight">몸무게</label>
+	<input id="weight" type="text">
+	<input type="button" value="계산하기" onClick="calc();">
+</body>
+</html>

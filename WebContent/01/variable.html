@@ -21,6 +21,10 @@
 	/* Boolean() 메서드는 0, null, undifined, "" 는 false를 반환한다. */
 	var b2 = Boolean("Hello");
 	var v;
+	var f = function() {};
+	var o = {};
+	var a = 1 * 'a';
+	 
 	
 	document.write(s);
 	document.write('<br>');
@@ -36,7 +40,11 @@
 	
 	/* typeof 변수 또는 데이터 : 자료형을 반환한다. */
 	document.write(typeof n1, '<br>');
-	document.write(typeof s)
+	document.write(typeof s, '<br>');
+	document.write(typeof f, '<br>');
+	document.write(typeof o, '<br>');
+	document.write(typeof a, '<br>');
+	document.write(a, '<br>');
 </script>
 </head>
 <body>

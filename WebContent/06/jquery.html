@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script>
+	/* 객체를 불러오는 방식 1 */
+	$(document).ready(function() {
+		$("#title").css("color", "red");
+	});
+	
+	/* 객체를 불러오는 방식 2 */
+	$(function() {
+		$("#title").css("color", "blue");
+	});
+	
+	/*
+		기본 선택자
+		1. 직접 선택자
+		  1) 전체 선택자 - $("*") : 모든 요소를 선택
+		  2) 아이디 선택자 - $("#아이디명") : id 속성에 지정한 값을 가진 요소를 선택
+		  3) 클래스 선택자 - $(".클래스명") : class 속성에 지정한 값을 가진 요소를 선택
+		  4) 요소 선택자 - $("요소명") : 지정한 요소명과 일치하는 요소들만 선택
+		  5) 그룹 선택자 - $("선택1, 선택2, 선택3, ...") : 선택1, 선택2, 선택3 ...에 지정된 요소들을 한번에 선택
+		  6) 종속 선택자 : $("오소명.클래스명") or $("오소명#아이디명") : 요소명 중에서 클래스명 혹은 아이디명이 일치하는 요소를 선택
+		
+		2. 인접 관계 선택자
+	*/
+</script>
+</head>
+<body>
+	<h1 id="title">제목</h1>
+</body>
+</html>
